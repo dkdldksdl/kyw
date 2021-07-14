@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 강원천문대 </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/SpryMenuBar.js" type="text/javascript"></script>
+    <script src="script/SpryTabbedPanels.js" type="text/javascript"></script>
+    <link href="css/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+    <link href="css/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo"><a href="#"><img src="images/logo.jpg" alt="로고"></a></div>
+            <div class="menu">     
+              <ul id="MenuBar1" class="MenuBarHorizontal">
+                <li><a class="MenuBarItemSubmenu" href="#">강원천문대</a>
+                    <ul>
+                      <li><a href="#">천문대소개</a></li>
+                      <li><a href="#">인사말</a></li>
+                      <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li><a class="MenuBarItemSubmenu" href="#">이용안내</a>
+                    <ul>
+                      <li><a href="#">프로그램</a></li>
+                      <li><a href="#">관람시간표</a></li>
+                      <li><a href="#">이달의 별자리</a></li>
+                    </ul>
+                </li>
+                <li><a class="MenuBarItemSubmenu" href="#">천문대예약</a>
+                    <ul>
+                      <li><a href="#">예약하기</a></li>
+                      <li><a href="#">예약확인</a></li>
+                      <li><a href="#">예약취소</a></li>
+                    </ul>
+                </li>
+                <li><a class="MenuBarItemSubmenu" href="#">커뮤니티</a>
+                    <ul>
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="#">방문후기</a></li>
+                      <li><a href="#">자유게시판</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+      </header>
+        <div id="contents">
+            <div class="slider">
+                <div class="sliderList">
+                    <div class="sliderImg"><a href="#"><img src="images/slider1.jpg" alt="슬라이드1"></a></div>
+                    <div class="sliderImg"><a href="#"><img src="images/slider2.jpg" alt="슬라이드2"></a></div>
+                    <div class="sliderImg"><a href="#"><img src="images/slider3.jpg" alt="슬라이드3"></a></div>
+                </div>
+            </div>
+                <div class="tabmenu">      
+                  <div id="TabbedPanels1" class="TabbedPanels">
+                    <ul class="TabbedPanelsTabGroup">
+                      <li class="TabbedPanelsTab" tabindex="0">공지사항</li>
+                      <li class="TabbedPanelsTab" tabindex="0">갤러리</li>
+                    </ul>
+                    <div class="TabbedPanelsContentGroup">
+                      <div class="TabbedPanelsContent">
+                          <ul>
+                              <li><a href="#" class="layerpopup">2021 견학 프로그램 참가자 모집</a><span>2021-06-01</span></li>
+                              <li><a href="#">국토정중앙천문대 7월 프로그램 안내</a><span>2021-06-01</span></li>
+                              <li><a href="#">국토정중앙천문대 7월 야영장 운영안내	</a><span>2021-06-01</span></li>
+                              <li><a href="#">야간관측프로그램 예약 및 접수 안내	</a><span>2021-06-01</span></li>
+                              <li><a href="#">극토정중앙천문대 야영장 시설사용료 인상 안내	</a><span>2021-06-01</span></li>
+                          </ul>
+                      </div>
+                      <div class="TabbedPanelsContent">
+                          <a href="#"><img src="images/G1.jpg" alt="갤러리1"></a>
+                          <a href="#"><img src="images/G2.jpg" alt="갤러리2"></a>
+                          <a href="#"><img src="images/G3.jpg" alt="갤러리3"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          <div class="banner"><a href="#"><img src="images/banner1.jpg" alt="배너"></a></div>
+                <div class="quick"><a href="#"><img src="images/banner2.jpg" alt="바로가기"></a></div>
+            </div>
+            <footer>
+                <div class="blogo"><a href="#"><img src="images/f_logo.jpg" alt="하단로고"></a></div>
+                <div class="bmenu">
+                    <ul>
+                        <li><a href="#">강원천문대소개 ㅣ</a></li>
+                        <li><a href="#">개인정보처리방침 ㅣ</a></li>
+                        <li><a href="#">이메일무단수집거부 ㅣ</a></li>
+                        <li><a href="#">찾아오시는길 ㅣ</a></li>
+                        <li><a href="#">예약하기</a></li>
+                    </ul>
+                </div>
+                <div class="copyright"><p>Copyright 강원천문대 ALL right reserved.</p></div>
+            </footer>
+            <div id="popup">
+                <button class="close">X</button>
+                    <h1>2021 견학 프로그램 참가자 모집</h1>
+                    <div class="text">
+                        <p>대한민국 천문우주과학의 성지, <br />
+                            한국천문연구원에 여러분을 초대합니다. <br />
+                            
+                            유관분야 최고 석학들의 <br />
+                            생생한 연구 현장에서 여러분의 꿈을 발견하세요! </p>
+                    </div>
+                </div>
+            </div>
+    <script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"images/SpryMenuBarDownHover.gif", imgRight:"images/SpryMenuBarRightHover.gif"});
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+</html>
