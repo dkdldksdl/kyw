@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Noto+Sans+KR');
+
+/*****************************
+    // reset 
+******************************/
+* {margin: 0; padding: 0;}
+body {font-size:14px; font-family:'Noto Sans KR', sans-serif;}
+ul,li {margin: 0; padding: 0; list-style:none;}
+h1,h2,h3,h4,h5,h6,p {margin: 0; padding: 0;}
+a{text-decoration: none; color:inherit;} /* inherit - 상위 요소의 스타일 상속받기 */
+a img {border:none;} 
+#skip-nav {position: fixed; left:0;top:-41px;}
+
+/****************************** 
+    // header
+*******************************/ 
+#wrap header {position: fixed;top: 0;left: 0;z-index:999;width: 100%;height: 100px;line-height: 100px;background: rgba(0,0,0,0.2);}
+#wrap header .innerHeader {width: 1400px; margin: 0 auto; height: 100%;}
+.innerHeader .logo {float: left; margin-top:10px;}
+
+/* gnb */
+.innerHeader .gnb {float: left; margin-left:100px;}
+.innerHeader .gnb ul li {float: left; margin-right:80px;}
+.innerHeader .gnb ul li a{display: block; font-size:16px; color:#fff; text-align:center;}
+.innerHeader .gnb ul li a:hover, 
+.innerHeader .gnb ul li a:focus {color:#ff8342;}
+
+/* tnb */
+.innerHeader .tnb {float: right; margin-right:-24px;}
+.innerHeader .tnb ul li {float: left; margin-right: 25px;}
+.innerHeader .tnb ul li a {display: block; text-align: center; color:#fff; font-size:16px;}
+.innerHeader .tnb ul li a:hover,
+.innerHeader .tnb ul li a:focus {color:#ff8342;}
+.innerHeader .tnb ul li:nth-child(1) a i,
+.innerHeader .tnb ul li:nth-child(2) a i {font-size:20px; margin-right:5px;}
+.innerHeader .tnb ul li:last-child a {display: block; width: 130px; border-radius:30px; margin-top: 35px; border:1px solid #fff; line-height: 2;}
+.innerHeader .tnb ul li:last-child a i {margin-left: 5px;}
+.innerHeader .tnb ul li:last-child a:hover,
+.innerHeader .tnb ul li:last-child a:focus {background: #fff; color:#ff8342; transition:.3s;}
+
+/****************************** 
+    // section - main
+*******************************/ 
+
+#wrap section.main {width: 100%; min-width: 1400px; height: 1000px; background: url(../images/vis_1.jpg)no-repeat center/cover; background-attachment: fixed; position: relative;}
+#wrap section.main .mainTitle {position: absolute; top: 50%; left: 50%; transform:translate(-50%,-50%); color:#fff; text-align: center; letter-spacing:-1px; text-shadow:0 0 5px rgba(0,0,0,0.5);}
+#wrap section.main .mainTitle h2 {font-size:47px; margin-bottom: 20px; font-weight: normal;}
+#wrap section.main .mainTitle p {font-size:25px; margin-top: 50px; margin-bottom: 30px;}
+#wrap section.main .mainTitle a.view {display: block; width: 180px; padding: 8px 0; font-size:16px; text-transform: uppercase; border: 2px solid #fff;border-radius:40px; position: relative; overflow:hidden; margin: 0 auto; letter-spacing:0;}
+/* text-transform: uppercase; 대문자 */
+
+/* view */
+.mainTitle a.view:after {content:""; width: 0%;height: 100%;position: absolute;top: 0;left: 0;background: rgba(255,255,255,0.4);transition:.3s;} 
+.mainTitle a.view:hover:after {width: 100%;} 
+.mainTitle a.view:focus {background: rgba(255,255,255,0.7);}
+.mainTitle a.view i {margin-left: 5px;}
+
+/****************************** 
+    // section - title - all
+*******************************/ 
+
+#wrap section .title {font-family:'Exo 2', sans-serif; color:#000; text-align: center;}
+#wrap section .title h2 {font-size:45px; margin-bottom: 10px; font-weight: normal;}
+#wrap section .title span {color:#ff8342;}
+#wrap section .title p {font-size:18px; color:#555;}
+
+/****************************** 
+    // section - about
+*******************************/ 
+
+#wrap section.about {width: 100%; min-width: 1400px; background: #fff; padding: 80px 0;}
+#wrap section.about ul {width: 1400px; margin: 50px auto; overflow:hidden;}
+#wrap section.about ul li {float: left; width: 33.3333%;}
+#wrap section.about ul li a {display: block;}
+
+.about ul li p.img {width: 100%; height: 369px; overflow:hidden;}
+.about ul li p.img img {width: 100%; height: auto; transition:.8s;}
+.about ul li a:hover p.img img,
+.about ul li a:focus p.img img {transform:scale(1.2);}
+.about ul li a .text {padding: 30px; box-sizing:border-box;}
+.about ul li a .text h3 {font-size:20px;margin-bottom: 10px;}
+.about ul li a .text p {font-size:16px; margin-bottom: 10px;}
+
+/* more btn */
+.about ul li a .text p.more {text-transform:uppercase; font-weight: bold; padding-left: 40px; position: relative;}
+.about ul li a .text p.more:hover {color:#999;}
+.about ul li a .text p.more:before {content:'\f178'; font-family:FontAwesome; background: #ff8342; width: 30px; height: 30px; line-height: 30px; border-radius:50%; position: absolute; left: 0; padding-left: 0.4px;}
+
+/****************************** 
+    // section - innovation
+*******************************/ 
+
+#wrap section.innovation {width: 100%; min-width: 1400px; margin-bottom:150px;}
+#wrap section.innovation .imgBox {width: 1400px; height: 540px; background: url("../images/product_1.jpg")no-repeat center/cover; position: relative; margin: 50px auto;}
+.innovation .imgBox .inner {position: absolute; left: 50%; bottom:-50px; transform:translateX(-50%); background: #3a3c4e; width:80%;}
+.innovation .imgBox .inner h3{background: #fff; padding: 25px 45px; box-sizing:border-box; font-size:18px;}
+.innovation .imgBox .inner h3 span{ color:#ff8342;}
+.innovation .imgBox .inner .bottom {padding: 35px 85px; box-sizing:border-box; color:#fff; line-height: 1.6; overflow:hidden;}
+.innovation .imgBox .inner .bottom p {float: left; }
+.innovation .imgBox .inner .bottom a {float:right; display: block; padding: 7px 30px; background: #ff8342; border-radius:50px; margin-top:20px;}
+.innovation .imgBox .inner .bottom a:hover,
+.innovation .imgBox .inner .bottom a:focus {background: #f86010;transition:.5s;}
+
+/****************************** 
+    // section - me
+*******************************/ 
+#wrap section.me {width: 100%; min-width: 1400px; background:url("../images/me.jpg") no-repeat center/cover; position: relative; padding: 80px 0; margin-bottom: 150px;}
+
+/* list */
+#wrap section.me .list {width: 1400px; margin: 50px auto; border-top:2px solid #000;}
+#wrap section.me .list>ul {padding-left: 30px;}
+#wrap section.me .list>ul>li {padding: 30px 30px 30px 10px; box-sizing:border-box;}
+#wrap section.me .list>ul>li:nth-child(1) {border-bottom:1px solid #ddd;}
+#wrap section.me .list>ul>li h3 {position: relative; font-size:18px; margin-bottom:20px;}
+#wrap section.me .list>ul>li h3 span {color:#ff8342; position: absolute; left:-25px;}
+#wrap section.me .list>ul>li>p {line-height: 1.6; margin-bottom: 20px;}
+#wrap section.me .list>ul>li>a {display: block; font-weight:bold; font-size:16px; position: relative;}
+#wrap section.me .list>ul>li>a span {position: absolute; top:3px; margin-left: 5px; font-size:14px; color:#ff8342;}
+#wrap section.me .list .more i:hover{color:#666;}
+
+#wrap section.me ul.in {margin-bottom: 30px;}
+#wrap section.me ul.in li{margin-bottom: 10px; overflow:hidden;}
+#wrap section.me ul.in li em{width: 12%; float: left; font-weight: bold;}
+#wrap section.me ul.in li p{ width: 88%; float: left; position: relative;}
+#wrap section.me ul.in li p:before{content:""; width: 4px; height: 4px; background: #ff8342; position: absolute; top: 30px; left: -40px;}
+
+/* button */
+#wrap section.me .button {position: absolute; left: 50%; top: 750px; transform:translate(-50%,-50%);}
+#wrap section.me .button a {background: #ff8342;   padding: 7px 30px; border-radius:50px; display: block; text-align:center; margin: 0 auto; color:#fff;  font-weight: bold;}
+#wrap section.me .button a:hover,
+#wrap section.me .button a:focus {background: #f86010; transition:.5s;}
+
+
+/****************************** 
+    // section - sns
+*******************************/ 
+
+#wrap section.sns {width: 100%; min-width: 1400px; /* 추가 */  margin-bottom: 60px;}
+
+#wrap section.sns ul {width: 1400px; margin: 50px auto;  overflow:hidden;}
+#wrap section.sns ul li{float: left; width: 32.333%; margin-right: 1.444%;}
+#wrap section.sns ul li:last-child { margin: 0;}
+#wrap section.sns ul li a { display: block; width: 100%; height: 100%;}
+#wrap section.sns ul li a p.img {width: 100%; height: 251px; overflow:hidden; position: relative;}
+
+.sns ul li a p.img:before {content:''; width: 0; height: 100%; background: rgba(255,131,66,0.8); transition:.5s; position: absolute; top: 0; left: 0;}
+
+.sns ul li a p.img img {width: 100%;}
+
+.sns ul li a:hover p.img:before,
+.sns ul li a:focus p.img:before {width: 100%;transition:.6s;}
+.sns ul li a p.img:after {content:'BLOG'; font-family:'Exo 2',sans-serif; font-size:15px; color:#fff; padding: 5px 30px; border:1px solid #fff; border-radius:40px; opacity:0; transition:.5s; position: absolute; top:50%; left: 50%; transform:translate(-50%,-50%);}
+.sns ul li a:hover p.img:after {opacity:1;}
+
+.sns ul li a .bottom {width: 100%; padding: 50px 0 20px 30px; box-sizing:border-box;}
+.sns ul li a .bottom p.color{color:#ff8342; font-weight: normal;}
+.sns ul li a .bottom p{font-size:18px; font-weight: bold;}
+.sns ul li a .bottom p.time{font-weight: normal; color:#999; font-size:15px; margin-top: 30px; padding-left: 20px; position: relative;}
+.sns ul li a .bottom p.time:before{content:'\f017'; font-family:FontAwesome; font-size:15px; position: absolute; left: 0; top: -3px; line-height: 30px;}
+
+/****************************** 
+    // footer
+*******************************/ 
+
+#wrap footer {width: 100%; min-width: 1400px; clear:both; border-top:1px solid #999; padding: 30px 0 50px 50px; box-sizing:border-box; position: relative;}
+
+/* inner */
+#wrap footer .inner {width: 1400px; position: absolute; left: 50%; top:50%; transform:translate(-50%,-50%); margin:0 auto; margin-bottom: 50px;}
+#wrap footer .inner .blogo {float: left; margin-top: 10px;}
+#wrap footer .inner .copyright {float: left; margin: 10px 0 0 100px;}
+#wrap footer .inner .copyright p {color:#666;}
+#wrap footer .inner .list {float: right; margin-top: 10px;}
+#wrap footer .inner .list ul li {float: left;  margin-left:30px;}
+#wrap footer .inner .list ul li a {color:#333; display: block; font-weight: bold;}
+#wrap footer .inner .list ul li:last-child a {color:#ff8342;}
+ #wrap footer .inner .list ul li:last-child a:hover {color:#999;}
