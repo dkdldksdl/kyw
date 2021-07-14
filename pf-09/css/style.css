@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* 주조색 : - / 보조색 : - / 배경색 : #ffffff / color : #222328 */
+* {margin: 0; padding: 0; color: #222328}
+ul, li {list-style: none;}
+a {text-decoration: none;}
+body {background: #ffffff;}
+
+#wrap {width: 1000px;}
+/* === header === */
+header {width: 200px; height: 650px; float: left;}
+.logo {width: 200px; height: 100px; float: left;}
+.menu {width: 200px; height: 550px; float: left;}
+.MenuBarItemSubmenu {text-align: center;}
+/* === /header === */
+
+/* === contents === */
+#contents {width: 800px; height: 550px; float: left; background: #666;}
+/* slider */
+.slider {width: 800px; height: 350px; position: relative; float: left; overflow: hidden;}
+.slider a img{float: left; display: block;}
+.slider .sliderList {width:2400px; height: 350px; position: absolute;}
+/* notice */
+.notice {width: 250px; height: 200px; float: left; border: 1px solid; box-sizing: border-box;}
+.notice h1 {font-size: 20px; font-weight: bold; margin-left: 10px;}
+.notice ul{margin: 10px 10px 0 10px;} 
+.notice ul li{height:38px; line-height: 36px; border-bottom:1px dashed #737373;}
+.notice ul li .layerpopup {font-weight: bold;}
+.notice ul li a {color:#222328; font-size:13px;}
+.notice ul li a:hover {color:#737373; text-decoration: underline;}
+.notice ul li span {float:right; color:#222328; font-size:11px;}
+/* galley */
+.galley {width: 300px; height: 200px; float: left; border: 1px solid; box-sizing: border-box;}
+.galley h1 {font-size: 20px; font-weight: bold; margin-left: 10px;}
+.galley img {margin-top: 15px; margin-left: 12.5px;}
+/* quick */
+.quick {width: 250px; height: 200px; float: left; background: #766;}
+/* === /contents === */
+
+/* === footer === */
+footer {width: 800px; height: 100px; float: left;}
+/* blogo */
+.blogo {width: 200px; height: 100px; float: left;}
+.blogo a img {margin-top: 10px;}
+/* copyright */
+.copyright {width: 400px; height: 100px; float: left;}
+.copyright p {margin-top: 25px; text-align: center; font-size: 12px;}
+/* f_site */
+.f_site {width: 200px; height: 100px; float: right}
+.f_site select {margin: 30px 0 0 55px}
+/* === /footer === */
+
+/* popup */
+#popup {width: 500px; height: 400px; background: #ffffff; border:2px solid gold; box-sizing: border-box; position: absolute; top: 80px; left: 30%; transform:translate(-50%); z-index: 999; display: none;}
+#popup .title {padding: 30px; border-bottom: 2px solid gold; font-size: 25px; text-align: center;}
+#popup .close {position: absolute; top: 5px; right: 10px;}
+#popup .close button {width: 20px; height: 20px; border: 0; cursor: pointer;}
+#popup .text {padding: 50px 15px 15px 15px; text-align: center; font-size: 14px; line-height: 45px;}
+#popup .text span {display: block; margin-left: 30px;}
