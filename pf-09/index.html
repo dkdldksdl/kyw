@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vallery Festival </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/SpryMenuBar.js"></script>
+    <link href="css/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <div id="wrap">
+       <header>
+           <div class="logo"><a href="#"><img src="images/logo.png" alt="로고"></a></div>
+            <div class="menu">         
+              <ul id="MenuBar1" class="MenuBarVertical">
+                <li><a class="MenuBarItemSubmenu" href="#">축제소개</a>
+                    <ul>
+                      <li><a href="#">Festival소개</a></li>
+                      <li><a href="#">행사장 안내</a></li>
+                      <li><a href="#">조직위원회</a></li>
+                    </ul>
+                </li>
+                <li><a class="MenuBarItemSubmenu" href="#">예약안내</a>
+                    <ul>
+                      <li><a href="#">예약하기</a></li>
+                      <li><a href="#">예약확인/취소</a></li>
+                      <li><a href="#">단체예약문의</a></li>
+                    </ul>
+                </li>
+                <li><a class="MenuBarItemSubmenu" href="#">아티스트</a>
+                    <ul>
+                      <li><a href="#">고릴라즈</a></li>
+                      <li><a href="#">메이저 레이저</a></li>
+                      <li><a href="#">아우스게인</a></li>
+                      <li><a href="#">타임로드</a></li>
+                    </ul>
+                </li>
+                <li><a class="MenuBarItemSubmenu" href="#">커뮤니티</a>
+                    <ul>
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="#">사진갤러리</a></li>
+                      <li><a href="#">영상갤러리</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+     </header>
+       <div id="contents">
+           <div class="slider">
+               <div class="sliderList">
+                   <div class="sliderImg"><a href="#"><img src="images/slide1.png" alt="valley rock"></a></div>
+                   <div class="sliderImg"><a href="#"><img src="images/slider2.png" alt="rock을 사랑하는 연인과 함께..."></a></div>
+                   <div class="sliderImg"><a href="#"><img src="images/slider3.png" alt="개막식 6월 7일 7:00~"></a></div>
+               </div>
+           </div>
+           <div class="notice">
+               <h1>공지사항</h1>
+               <ul>
+                   <li class="layerpopup"><a href="#">[이벤트발표] 사연 당첨자 발표</a><span>2021.06.07</span></li>
+                   <li><a href="#">남도 여수 valley rock  Festival 정보 공유</a><span>2021.06.07</span></li>
+                   <li><a href="#">valley rock Festival입장권 예매 START!</a><span>2021.06.07</span></li>
+                   <li><a href="#">페스티발 개최를 위한 의견을 받습니다.</a><span>2021.06.07</span></li>
+                   <li><a href="#">카페에서 다양한 소식을 전합니다!!</a><span>2021.06.07</span></li>
+               </ul>
+           </div>
+           <div class="galley">
+               <h1>갤러리</h1>
+               <a href="#"><img src="images/ga1.jpg" alt="갤러리1"></a>
+               <a href="#"><img src="images/ga2.jpg" alt="갤러리2"></a>
+               <a href="#"><img src="images/ga3.jpg" alt="갤러리3"></a>
+           </div>
+           <div class="quick">
+               <a href="#"><img src="images/quick.png" alt="Valley Rock 참가신청 참가자격 :  1인 또는 그룹 참가신청 : 2021. 5. 24(월) ~ 5. 28(금)"></a>
+           </div>
+       </div>
+       <footer>
+           <div class="blogo"><a href="#"><img src="images/footer_logo.png" alt="하단로고"></a></div>
+           <div class="copyright">
+               <p>서울시 영등포구 당산2가 이화빌딩 티아이에스 2층 <br />
+                copyright(c) 2010 Busan Infrastructure Corporation. <br /> 
+                all rights reserved</p>
+           </div>
+           <div class="f_site">
+               <select title="패밀리사이트">
+                    <option value="패밀리사이트">패밀리사이트</option>
+                    <option value="관광축제조직위원회">관광축제조직위원회</option>
+                    <option value="문화체육관광부">문화체육관광부</option>
+                    <option value="국제무용협회">국제무용협회</option>
+                </select>
+           </div>
+       </footer>
+       <div id="popup">
+           <button class="close">X</button>
+           <h2>[이벤트발표] 사연 당첨자 발표</h2>
+           <div class="text">
+           <p>
+            서*찬 010-****-7070 <br />
+            박*주 010-****-1303 <br />
+            김*승 010-****-9992 <br />
+            김*기 010-****-1603 <br />
+            장*환 010-****-8613 <br />
+            이*철 010-****-6722
+            </p>
+         </div>
+       </div>
+   </div> 
+   <script>
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+   </script>
+</body>
+</html>

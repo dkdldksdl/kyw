@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; color:#222328;}
+
+#wrap {width: 1000px; position: relative;}
+body {background: #ffffff;}
+ul,li {list-style: none;}
+a {text-decoration: none; color: #222328;}
+h1 {font-size: 25px;}
+
+header {width: 200px; height: 650px; float: left;}
+header .logo {width: 200px; height: 100px;}
+header .logo img {margin-top: 15px;}
+header .menu {width: 200px; height: 550px; background: #ddd;}
+
+#contents {width: 800px; height: 550px; float: left;}
+#contents .slider {width: 800px; height: 350px; position: relative; overflow: hidden;}
+#contents .slider .sliderList {position: absolute; top: 0; left: 0;}
+#contents .slider img {display: block;}
+
+#contents .notice {width: 275px; height: 200px; background: #fff; float: left;}
+#contents .notice li {border-bottom: 1px dotted #000; width: 275px;}
+#contents .notice ul li {font-size: 12px; float: left; height: 32px; line-height: 32px;}
+#contents .notice li span {float: right;}
+#contents .galley {width: 275px; height: 200px;; float: left;}
+#contents .galley img {width: 70px; height: 150px; margin-left: 15px; margin-top: 15px;}
+#contents .quick {width: 250px; height: 200px; background: magenta; float: left;}
+
+footer {width: 800px; height: 100px; background: #fff; float: left;}
+footer .blogo {width: 200px; height: 100px; float: left;}
+footer .blogo img {margin-top: 15px;}
+footer .copyright {width: 400px; height: 100px; float: left;}
+footer .copyright p {text-align: center; height: 25px; line-height: 25px; margin-top: 5px; font-size: 14px;}
+footer .f_site {width: 200px; height: 100px; float: left;}
+footer select {width: 150px; margin-top: 40px; margin-left: 50px;}
+
+#popup {width: 500px; height: 400px; background: #ffffff; border: 3px solid #000; float: left; position: absolute; top: 30px; left: 30%; display: none; z-index: 999;}
+#popup button {position: absolute; top: 15px; right: 15px;}
+h2 {font-size: 25px; height: 50px; line-height: 30px; text-align: center; border-bottom: 2px solid #000; margin-top: 15px;}
+.text p {text-align: center; height: 45px; line-height: 45px; margin-top: 25px;}
