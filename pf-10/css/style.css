@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* 주조색 #0066ad 보조색 #30a3f3 배경색 #ffffff 기본 텍스트의 색 #333333 */
+/* reset */
+* {margin: 0 auto; padding: 0; color: #333333;}
+#wrap {width: 100%;}
+ul,li {list-style: none;}
+a {text-decoration: none;}
+body {background: #ffffff;}
+/* header */
+header {width: 1200px; height: 100px;}
+/* header -logo */
+header .logo {width: 200px; height: 100px; float: left;}
+header .logo img {margin-top: 25px;}
+/* header -menu(dreamweaver) */
+header .menu {width: 1000px; height: 100px; float: left; position: relative;}
+
+/* contents */
+#contents {width: 1200px; height: 500px;}
+/* contents -slider */
+#contents .slider {width: 1200px; height: 300px; float: left; position: relative; overflow: hidden;}
+#contents .slider>div {position: absolute; top: 0; left: 0;} 
+
+#wrap .slider .sliderList .sliderImg{float: left;} 
+/* contents -tabmenu */
+#contents .tabmenu {width: 400px; height: 200px; float: left;}
+#contents .tabmenu .TabbedPanelsContent ul li {font-size: 14px;  border-bottom: 1px dotted #333333;}
+#contents .tabmenu ul li a {line-height: 31px;}
+#contents .tabmenu ul li a:hover {opacity: 0.5; color: #30a3f3;}
+#contents .tabmenu ul li span {float: right; line-height: 31px;}
+/* contents -banner */
+#contents .banner {width: 400px; height: 200px; float: left;}
+/* contents -quick */
+#contents .quick {width: 400px; height: 200px; float: left;}
+
+/* footer */
+footer {width: 1200px; height: 100px;}
+/* footer -blogo */
+footer .blogo {width: 200px; height: 100px; float: left;}
+footer .blogo img {margin-top: 25px;}
+/* footer -bmenu */
+footer .bmenu {width: 1000px; height: 50px; float: left;}
+footer .bmenu ul li {margin-left: 75px;}
+footer .bmenu ul li a {float: left; margin: 15px;}
+footer .bmenu ul li a:hover {opacity: 0.5;}
+/* footer -copyright */
+footer .copyright {width: 1000px; height: 50px; float: left;}
+footer .copyright p {text-align: center; margin-top: 10px;}
+
+/* popup */
+#popup {width: 600px; height: 500px; background: #ffffff; border: 3px solid #0066ad; position: absolute; top: 50px; left: 20%; display: none; z-index: 9999;}
+#popup .close {position: absolute; right: 10px; top: 10px; width: 25px; height: 25px;}
+#popup h1 {text-align: center; line-height: 100px; border-bottom: 2px solid #30a3f3;}
+#popup .text {text-align: center; line-height: 60px; margin-top: 50px; font-size: 20px;}
