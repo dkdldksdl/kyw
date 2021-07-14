@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> pf </title>
+    <script src="script/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $(".btn1").on("click",function(){
+                $(".frame img").attr({"src":"IMAGES/01.jpg","alt":"01"});
+            });
+            $(".btn2").on("click",function(){
+                $(".frame img").attr({"src":"IMAGES/02.jpg","alt":"02"});
+            });
+            $(".btn3").on("click",function(){
+                $(".frame img").attr({"src":"IMAGES/03.jpg","alt":"03"});
+            });
+            $(".btn4").on("click",function(){
+                $(".frame img").attr({"src":"IMAGES/04.jpg","alt":"04"});
+            });
+            $(".btn5").on("click",function(){
+                $(".frame img").attr({"src":"IMAGES/05.jpg","alt":"05"});
+            });
+            $(".btn6").on("click",function(){
+                $(".frame img").attr({"src":"IMAGES/06.jpg","alt":"06"});
+            });
+            $(".btn7").on("click",function(){
+                $(".frame img").attr({"src":"IMAGES/07.jpg","alt":"07"});
+            });
+        })
+    </script>>
+    <style>
+        * {margin: 0; padding: 0;}
+        body {background: #dedede; font-size: 12px;}
+        ul,li {margin: 0; padding: 0; list-style: none;}
+        #pf {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+        #pf .menu ul li {float: left;}
+        #pf .menu ul li a {text-decoration: none; background: #000; color: #fff; width: 97.7px; padding: 15px 0px 15px 0px; text-align: center; display: block;
+        margin-right: 3px; border-top-left-radius: 10px; border-top-right-radius: 10px }
+        #pf .menu ul li a:hover {background: #999;}
+        #pf .menu ul li a:focus {background: #999;}
+        #pf .frame img {border: 1px solid #000;}
+    </style>
+</head>
+<body>
+    <!-- #pf>.menu+.frame -->
+    <div id="pf">
+        <div class="menu">
+            <!-- ul>li*5>a.btn1{불꽃글자} -->
+            <ul>
+                <li><a href="#" class="btn1" alt="01">불꽃글자</a></li>
+                <li><a href="#" class="btn2" alt="02">엠보싱문자</a></li>
+                <li><a href="#" class="btn3" alt="03">아이팟</a></li>
+                <li><a href="#" class="btn4" alt="04">라이언목업</a></li>
+                <li><a href="#" class="btn5" alt="05">C목업1</a></li>
+                <li><a href="#" class="btn6" alt="06">C목업2</a></li>
+                <li><a href="#" class="btn7" alt="07">C목업3</a></li>
+            </ul>
+        </div>
+        <div class="frame">
+            <a href="#"><img src="IMAGES/01.jpg" alt="01"></a>
+        </div>
+    </div>
+</body>
+</html>
