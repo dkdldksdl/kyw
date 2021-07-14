@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꽃양귀비</title>
+    <!-- link (enter) -->
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <!-- 페비콘 -->
+    <link rel="shoutcut icon" href="images/fv.png">
+
+    <!-- script:src -->
+    <script src="script/jquery-1.11.3.js"></script>
+    <script src="script/jquery.innerfade.js"></script>
+    <script>
+        // 페이드 인 아웃 - 플러그인 //
+        $(function(){
+            $('.inner-fade').innerfade({animationtype:'fade', timeout:2000});
+            // 2000 -> 2초 (1000 -> 1초)//
+        });
+    </script>
+</head>
+<body>
+    <!-- #wrap>header+section.me+section.photo+footer -->
+    <div id="wrap">
+        <!-- herder -->
+        <header>
+            <!-- .logo+.menu (enter)-->
+            <div class="logo">
+                <!-- a{youngwan} -->
+                <a href="index.html"><img src="images/logo.png" alt="로고"></a></a>
+        </div>
+            <div class="menu">
+                <!-- ul>li*4>a{menu} (enter) -->
+                <ul>
+                    <li><a href="#">축제안내</a></li>
+                    <li><a href="#">꽃양귀비는?</a></li>
+                    <li><a href="#">키우는법</a></li>
+                    <li><a href="#">사진관</a></li>
+                    <li><a href="bbs.html">커뮤니티</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="me">
+        <h2 class="blind">me</h2>
+       <!-- ul>li>a>img -->
+       <ul class="inner-fade">
+           <li><a href="https://korean.visitkorea.or.kr/detail/fes_detail.do?cotid=3b3bde6e-4e7d-48e2-8198-214ddc852e8f&big_category=undefined&mid_category=undefined&big_area=undefined">
+            <img src="images/slider.jpg" alt="원주 용수골 축제"></a></li>
+           <li><a href="http://www.cosmosfestival.co.kr/default/"><img src="images/slider2.jpg" alt="하동 북천 축제"></a></li>
+       </ul>
+    </section>
+    <section class="info">
+             <!-- .notice+.banner -->
+        <div class="notice">
+           <h1>공지사항</h1>
+           <!-- ul>li>span.t+a+span -->
+           <ul>
+               <li><span class="a1">[축제안내]</span><a href="#">원주 용수골 꽃양귀비 축제 기간 안내</a><span>21-03-12</span></li>
+               <li><span class="a1">[축제안내]</span><a href="#">하동 북천 꽃양귀비 축제 기간 안내</a><span>21-03-12</span></li>
+               <li><span class="a2">[커뮤니티]</span><a href="#">같이 축제 가실분 모집중~!</a><span>21-03-12</span></li>
+               <li><span class="a2">[커뮤니티]</span><a href="#">봄나들이 가실분 신청받아요~~!! 마감임박</a><span>21-03-12</span></li>
+               <li><span class="a2">[커뮤니티]</span><a href="#">놀림당하는 제 이름을 바꾸고 싶어요!!</a><span>21-03-12</span></li>
+               <li><span class="a2">[커뮤니티]</span><a href="#">봄나들이 가실분 신청받아요~~!! 마감임박</a><span>21-03-12</span></li>
+               <li><span class="a3">[판매처]</span><a href="#">놀림당하는 제 이름을 바꾸고 싶어요!!</a><span>21-03-12</span></li>
+           </ul>
+        </div>
+        <div class="banner">
+            <!-- a>img -->
+            <a href="#"><img src="images/banner2.jpg" alt="배너"></a>
+        </div>
+    </section>
+        
+        <section class="photo">
+        <h3 class="blind">photo</h3>
+            <!-- a>ing -->
+            <a href="#"><img src="images/1.jpg" alt="이미지1"></a>
+            <a href="#"><img src="images/2.jpg" alt="이미지2"></a>
+            <a href="#"><img src="images/3.jpg" alt="이미지3"></a>
+            <a href="#"><img src="images/4.jpg" alt="이미지4"></a>
+            <a href="#"><img src="images/5.jpg" alt="이미지5"></a>
+            <a href="#"><img src="images/6.jpg" alt="이미지6"></a>
+        </section>
+        <footer>
+
+            <!-- .blogo+copyright+.sns -->
+            <div class="blogo">
+                <a href="index.html"><img src="images/logo.png" alt="로고"></a></a>
+            </div>
+            <div class="copyright"><p>
+                꽃양귀비 홈페이지 제작자 : 김영완<br />
+                Copyright &copy; 2021 <a href="mailto:dkdldksdl@naver.com">김영완</a>.
+                All Rights Reserved.</div>
+            <div class="sns">
+                <!-- ul>li>a>img -->
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="images/face.png" alt="페이스북"></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="images/youtube.png" alt="유튜브"></a></li>
+                    <li><a href="https://twitter.com/"><img src="images/twi.png" alt="트위터"></a></li>
+                    <li><a href="https://band.us/"><img src="images/band.png" alt="밴드"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="images/insta.png" alt="인스타그램"></a></li>
+                </ul>
+            </div>
+
+            <p>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
