@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+ul, li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none;}
+
+#wrap {width: 1200px; margin: 0 auto;}
+
+/* header */
+#wrap header {height: 90px; position: relative;}
+
+/* logo */
+#wrap header h1 {padding-top: 20px}
+#wrap header h1 a {cursor: pointer;}
+
+/* menu */
+#wrap header .menu {position: absolute; right: 0; font-size: 18px; top: 28px; z-index: 1; padding-top: 20px;}
+#wrap header .menu ul {float: right; right: 3px;}
+#wrap header .menu ul li {float: left; margin: 0;}
+#wrap header .menu ul li a {display: block; color: #666; text-align: center; width: 150px;}
+#wrap header .menu ul li a:hover {color: #cc1631; border-bottom: 3px solid #cc1631; padding-bottom: 15px; font-weight: bold;}
+
+/* section */
+#wrap section .box {width: 1200px; height: 450px; position: relative; background: url(../images/bg_business_visual.jpg) no-repeat;}
+#wrap section .box ul {width: 1200px;}
+#wrap section .box ul li.item {width: 25%; height: 450px; position: relative; float: left;}
+#wrap section .box ul li a {text-align: center;}
+#wrap section .box ul li a.link {width: 100%; height: 450px; background: #cc1631; opacity: 0; color: #fff; position: absolute;}
+#wrap section .box ul li a.link:hover {opacity: 0.8;}
+#wrap section .box ul li a span.big {width: 100%;display: block; font-size: 30px; position: absolute; top: 130px;}
+#wrap section .box ul li a span.line {width: 100%; display: block; top: 195px; position: absolute; margin: 0 auto; width: 20px; border-bottom: 2px solid #fff; left: 140px;}
+#wrap section .box ul li a span.text {width: 100%; display: block; top: 220px; position: absolute;line-height: 1.7;}
+
+/* btn */
+#wrap #btn {height: 200px; padding-top: 25px;}
+#wrap #btn ul li {float: left; background: url(../images/btn.png)no-repeat; width: 105px; height: 105px; margin-left: 60px; cursor: pointer;}
+#wrap #btn ul li a{display: block; padding-bottom: 21px 33px 74px 21px;}
+#wrap #btn ul li:first-child {margin-left: 50px;}
+#wrap #btn li.btn_1 {background-position: 0 0;}
+#wrap #btn li.btn_2 {background-position: 0 -116px;}
+#wrap #btn li.btn_3 {background-position: 0 -241px;}
+#wrap #btn li.btn_4 {background-position: 0 -359px;}
+#wrap #btn li.btn_5 {background-position: 0 -474px;}
+#wrap #btn li.btn_6 {background-position: 0 -590px;}
+#wrap #btn li.btn_7 {background-position: 0 -716px;}
+
+#wrap #btn ul li:hover {float: left; background: url(../images/btn-hover.png)no-repeat; width: 105px; height: 105px; margin-left: 60px; cursor: pointer;}
+#wrap #btn ul li a:hover{display: block; padding-bottom: 21px 33px 74px 21px;}
+#wrap #btn ul li:first-child:hover {margin-left: 50px;}
+#wrap #btn li.btn_1:hover {background-position: 0 0;}
+#wrap #btn li.btn_2:hover {background-position: 0 -116px;}
+#wrap #btn li.btn_3:hover {background-position: 0 -241px;}
+#wrap #btn li.btn_4:hover {background-position: 0 -359px;}
+#wrap #btn li.btn_5:hover {background-position: 0 -474px;}
+#wrap #btn li.btn_6:hover {background-position: 0 -590px;}
+#wrap #btn li.btn_7:hover {background-position: 0 -716px;}
+
+#wrap #btn ul li a span {display: block; font-weight: bold; text-align: center; margin-top: 120px; color: #666;}
+#wrap #btn ul li a span:hover {color: #cc1631;}
+
+footer {height: 50px;text-align: center; background: rgb(175, 170, 170); border-top: 1px solid #000; border-bottom: 1px solid #000;;box-sizing: border-box;}
+footer p {margin-top: 2px;}
