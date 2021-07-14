@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@import url("http://ts.daumcdn.net/custom/blog/0/606/skin/images/nanumgothic.css");
+
+
+* {margin: 0 auto; color:#636363; line-height: 1.7em;}
+#wrap {width: 735px;}
+body {font-size:12px; color:#636363;font-family:'Nanum Gothic'}
+h1 {color:#000; font-size: 35px; margin-top: 10px;}
+
+/* welcome */
+#wrap .welcome {width: 735px; height: 190px; float: left; border-bottom: 2px solid #464646; background: url(../images/flower.png) no-repeat right bottom;}
+#wrap .welcome .wel {font-size: 10px;}
+#wrap .welcome .red {color: red;}
+#wrap .welcome .icon {width: 200px; height: 50px; float: left; margin-top: 25px;} 
+#wrap .welcome .icon :first-child:hover {opacity: 0.8;}
+#wrap .welcome p {font-size: 12px;}
+
+/* center */
+#center {width: 735px; height: 630px;}
+.photo {width: 365px; height: 316px;; float: left; background: url(../images/photo.png) no-repeat; margin-top: 39px;}
+
+.top {width: 365px; height: 185px; float: right; margin-top: 39px; border-bottom: 2px solid #464646;}
+.bottom .b_text {width: 365px; height: 395px; float: right; font-size: 12px; text-align:justify; margin-top: 33px;}
+
+.author {width: 735px; height: 100px;float: right; clear: both;}
+.f_text {float: left; font-weight: bold; margin-left: 590px; margin-top: 10px;}
+.author span {float: right; font-size: 18px; font-weight: bold;}
