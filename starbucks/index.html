@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 김영완 - 스타벅스 </title>
+    <link rel="shoutcut icon" href="images/fv.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $("#menu").slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <!-- .header_box>.header_inner>.logo>.site -->
+        <div class="header_box">
+            <div class="header_inner">
+                <div class="logo">
+                    <div class="site">
+                        <h1>
+                        <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+                        </h1>   
+                    </div>
+                </div>
+                <!-- .menu>button#menubtn+nav#menu.menu -->
+                <div class="menus">
+                    <!-- mobile - toggle (햄버거버튼)-->
+                    <button id="menubtn">&#9776;</button>
+                    <!-- pc - menu -->
+                    <nav id="menu" class="menu">
+                        <!-- ul>li*5>a{ABOUT} -->
+                        <ul>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">MENU</a></li>
+                            <li><a href="#">STORE</a></li>
+                            <li><a href="#">COFFEE</a></li>
+                            <li><a href="#">NEWS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>
+    <div id="center">
+        <!-- .slider+.con+.info -->
+        <div class="slider">
+            <!-- .top>a.topimg+p.text{오늘의 커피는 블루마운틴..} -->
+            <div class="top">
+                <a href="#"><img src="images/main_img.jpg" alt="슬라이딩"  class="topimg"></a>
+                <p class="text">오늘의 커피는 블루마운틴..</p>
+            </div>
+        </div>
+        <div class="con">
+            <div class="con1">
+                <!-- .summary>a>i.thum1+h2+p -->
+                <div class="summary">
+                    <a href="#">
+                        <i class="thum1"></i>
+                        <h2>SUN-DRIED BRAZIL</h2>
+                        <p>싱그러움과 달콤함의 피니시</p>
+                    </a>
+                </div>
+            </div>
+            <div class="con2">
+                <div class="summary">
+                    <a href="#">
+                        <i class="thum2"></i>
+                        <h2>스타벅스만의 특별한 혜택</h2>
+                        <p>나만의 리워드를 확인하세요</p>
+                    </a>
+                </div>
+            </div>
+            <div class="con3">
+                <div class="summary">
+                    <a href="#">
+                        <i class="thum3"></i>
+                        <h2>PICK YOUR FAVORITE</h2>
+                        <p>다양한 메뉴를 스타벅스에서 즐겨보세요</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 공지사항 + SNS -->
+        <div class="info">
+            <!-- .info_inner>.notice>h3{공지사항} -->
+            <div class="info_inner">
+                <div class="notice">
+                    <h3>공지사항</h3>
+                    <!-- ul>li*4>a>span+span.time{21-06-29} -->
+                    <ul>
+                        <li><a href="#"><span>스타벅스의 특별한 혜택, 스타벅스 리워드</span><span class="time">21-06-29</span></a></li>
+                        <li><a href="#"><span>기프트카드를 선물하세요. 여름 빅 이벤트</span><span class="time">21-06-29</span></a></li>
+                        <li><a href="#"><span>크리스마스 블렌드를 만나보세요!</span><span class="time">21-06-29</span></a></li>
+                        <li><a href="#"><span>스타벅스 월페이퍼 다운</span><span class="time">21-06-29</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sns">
+                <div class="follow">
+                    <p class="follow-info">최신정보를 여기서도 다운받으세요</p>
+                    <!-- ul>li*3>a{Twitter} -->
+                    <ul>
+                        <li><a href="#" class="Twitter">Twitter</a></li>
+                        <li><a href="#" class="Facebook">Facebook</a></li>
+                        <li><a href="#" class="Google">Google+</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- .st>.st_innner>.copyright>p>strong -->
+        <div class="st">
+            <div class="st_innner">
+                <div class="copyright">
+                    <p><strong>(주)스타벅스커피코리아</strong>
+                        대표 : 송데이비드호섭 <br />
+                        &copy; 2021 <strong><a href="mailto:starbucks@starbucks.co.kr">Starbucks Coffee Company.</strong></a>
+                        All Right Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
