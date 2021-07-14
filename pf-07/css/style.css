@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* 주조색:#00C73C 보조색:#737373 배경색:#FFFFFF 텍스트색: #333333 */
+
+/* reset */
+* {margin: 0; padding: 0; color: #333333;}
+body {background:#FFFFFF;}
+ul, li {margin: 0; padding: 0; list-style:none;}
+a {text-decoration: none;}
+#wrap {width: 1200px; margin: 0 auto;}
+
+/* header */
+#wrap header{width: 1200px;height: 100px; position: relative;}
+
+/* logo */
+#wrap header .logo{width: 200px;height: 100px; float: left; }
+#wrap header .logo img {width: 200px; height:50px; position: absolute; left:0; top:25px;}
+#wrap header .logo img:hover {opacity: 0.5;}
+
+
+#wrap header .menu{width: 900px;height: 100px;  float: left;}
+#wrap header .menu nav {width: 80%; position: absolute; bottom:0; right:0; z-index:3;}
+
+#wrap header .menu nav ul {padding-left:40%;}
+#wrap header .menu nav ul li {position: relative; float: left; width: 25%; text-align: center;}
+#wrap header .menu nav ul li:hover {background: #737373;}
+#wrap header .menu nav ul li a {display: block; font-size:13px; padding: 10px; color:#fff; background: #00C73C;}
+#wrap header .menu nav ul li a:hover {background: #737373;}
+#wrap header .menu nav ul li ul.submenu {padding-left: 0; display: none; position: absolute; left:0; top:37px; height: 140px; z-index: 3;}
+#wrap header .menu nav ul li ul.submenu li{width: 100%;}
+#wrap header .bg {width: 1200px; height: 155px; background: #00C73C; position: absolute; left: 0; top: 100px; z-index: 1; display: none;}
+
+/* slider */
+#wrap .slider{width:1200px; height: 300px; position: relative; overflow: hidden;} 
+#wrap .slider>div {position: absolute; top:0; left:0;}
+#wrap .slider img {display: block;} 
+
+/* contents */
+#wrap .con{width:1200px; height: 200px;} 
+/* 공지사항 */
+#wrap .con .notice{position: relative; width: 400px;height: 200px;float: left;} 
+#wrap .con .notice h1{font-size: 20px; color:#333333; margin: 10px 0 10px 10px;} 
+#wrap .con .notice ul{margin: 10px 10px 0 10px;} 
+#wrap .con .notice ul li{height:28px; line-height: 28px; border-bottom:1px dashed #737373} 
+#wrap .con .notice ul li a {color:#333; font-size:13px;}
+#wrap .con .notice ul li a:hover {color:#737373; text-decoration: underline;}
+#wrap .con .notice ul li span {float:right; color:#333333; font-size:13px;}
+
+/* 갤러리 */
+#wrap .con .galley {width: 400px; height: 200px; float: left;}
+#wrap .con .galley h1{font-size: 20px; color:#333; margin: 10px 0 10px 15px;} 
+#wrap .con .galley a img {width: 100px; height: 150px; margin-left: 20px;}
+
+#wrap .con .quick {width: 400px; height: 200px; float: left;} 
+
+/* footer */
+footer {width: 1200px; height: 100px;}
+footer .bottom {width: 1200px; height: 100px;}
+
+footer .bottom .copyright{width: 1000px; height: 100px;; float: left;}
+footer .bottom .copyright p {margin-top: 40px ;text-align: center;}
+
+footer .bottom .sns {width: 200px; height: 50px; float: left;}
+footer .bottom .sns a img {display: block; float: left; margin: 5.5px;}
+footer .bottom .sns a img:hover {opacity: 0.5;}
+
+footer .bottom .p_site {width: 200px; height: 50px; float: left;}
+footer .bottom .p_site select {width: 150px;margin: 15px 0 0px 25px;}
+
+/* popup */
+#popup {width: 500px; height: 400px; background: #FFFFFF; border:2px solid #00C73C; box-sizing: border-box; position: absolute; top: 150px; left: 40%; transform:translate(-50%); z-index: 20; display: none;}
+
+#popup .title {padding: 30px; border-bottom: 2px solid #00C73C; font-size: 25px; text-align: center;}
+
+#popup .close {position: absolute; top: 5px; right: 10px;}
+#popup .close button {width: 20px; height: 20px; border: 0; cursor: pointer;}
+
+#popup .text {padding: 50px 15px 15px 15px; text-align: center;}
+#popup .text span {display: block; margin-left: 30px;}
