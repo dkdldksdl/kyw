@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꽃양귀비 공식 홈페이지-게시판</title>
+    <!-- link (enter) -->
+    
+    <link rel="stylesheet" href="css/join.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <!-- 페비콘 -->
+    <link rel="shoutcut icon" href="images/fv.png">
+
+  </head>
+<body>
+    <!-- #wrap>header+section.me+section.photo+footer -->
+    <div id="wrap">
+        <!-- herder -->
+        <header>
+            <!-- .logo+.menu (enter)-->
+            <div class="logo">
+                <!-- a{youngwan} -->
+                <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+        </div>
+            <div class="menu">
+                <!-- ul>li*4>a{menu} (enter) -->
+                <ul>
+                    <li><a href="#">축제안내</a></li>
+                    <li><a href="#">꽃양귀비는?</a></li>
+                    <li><a href="#">키우는법</a></li>
+                    <li><a href="#">사진관</a></li>
+                    <li><a href="bbs.html">커뮤니티</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+
+        </header>   
+        <!-- section>aside+#contents -->
+        <section>
+            <h1 class="blind">information</h1>
+            <!-- 왼쪽메뉴 (상단이미지+메뉴) -->
+            <aside>
+                <!-- .subimg1>p{information} -->
+                <div class="subimg1">
+                    <p>information</p>
+                </div>
+                
+            <!-- 메뉴 -->
+
+            <!-- .lnb>ul>li>a{공지사항} -->
+            <div class="lnb">
+                <ul class="nav">
+                    <li class="bg"><a href="#">회원가입</a></li>
+                    <li class="bg"><a href="#">로그인</a></li>
+                    <li class="bg"><a href="#">아이디/비밀번호찾기</a></li>
+                    <li class="bg"><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            </aside>
+                <!-- 중앙 내용(이벤트 배너 + 게시판) -->            
+            <div id="contents">
+                <h1>회원가입</h2>
+				
+                 <a href="#"><img src="images/join/sun.jpg" alt="title"></a>
+           
+                    <form action="#" method="post" class="basic_info">
+                        <legend class="blind">기본정보입력</legend>
+                  
+                  
+                  
+                  
+                        <h2>
+                           <!-- img+span>strong  -->
+                           <img src="images/join/icon_arrow.gif" alt=" 필수">
+                           기본정보입력화면
+                           <span>입력 항목 중 (<strong>*</strong>) 표시된 항목은
+                        필수입력 항목</span>
+                        </h2>
+
+                  
+                        <!-- 회원가입양식 -->
+                        <table summary="회원가입양식">
+                            <!-- summary : 테이블 요약 부분 -->
+                            <!-- caption : 테이블이 제목 -->
+                            <caption class="blind">기본정보 입력화면</caption>
+                            <tbody>
+
+                                <!-- 아이디 -->
+                                <tr>
+                                    <th scope="row" >
+                                        <!-- scope 속성 : 열의 제목(col)과 행의 제목(row) 알려줌 -->
+                                        <label for="useId">
+                                            <img src="images/join/id.gif" alt="아이디/필수">
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="useId" maxlength="12" />
+                                        <span>영문으로 시작하는 6~12자리 영문, 숫자만 가능합니다. </span>
+                                    </td>
+                                </tr>
+
+                                <!-- 2.비밀번호 설정 -->
+                                <tr>
+                                    <th scope="row" >
+                                        <!-- scope 속성 : 열의 제목(col)과 행의 제목(row) 알려줌 -->
+                                        <label for="usePw">
+                                            <img src="images/join/pw.gif" alt="비밀번호/필수">
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <input type="password" id="usePw" maxlength="12" />
+                                        <span>8자리 이상 영문, 숫자를 조합하여 입력해주시기 바랍니다. </span>
+                                    </td>
+                                </tr>
+                                 <!-- 비밀번호 확인 -->
+                                 <tr>
+                                    <th scope="row" >
+                                        <!-- scope 속성 : 열의 제목(col)과 행의 제목(row) 알려줌 -->
+                                        <label for="usePwch">
+                                            <img src="images/join/pw_ok.gif" alt="비밀번호 확인/필수">
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <input type="password" id="usePwch" maxlength="12" />
+                                        <span>비밀번호를 다시 입력해주시기 바랍니다. </span>
+                                    </td>
+                                </tr>
+
+                                 <!-- 이름 -->
+                                 <tr>
+                                    <th scope="row" >
+                                        <!-- scope 속성 : 열의 제목(col)과 행의 제목(row) 알려줌 -->
+                                        <label for="useName">
+                                            <img src="images/join/name.gif" alt="이름/필수">
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="useName"  />
+                                        <span></span>
+                                    </td>
+                                </tr>
+
+                                 <!-- 생일 -->
+                                 <tr>
+                                    <th scope="row" >
+                                        <!-- scope 속성 : 열의 제목(col)과 행의 제목(row) 알려줌 -->
+                                        <label for="birthday">
+                                            <img src="images/join/birthday.gif" alt="생일">
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <!-- 년, 월, 일 -->
+                                        <input type="text" id="birthday" title="년도" size="4"/> 년
+                                        <input type="text" id="birthday2" title="월" size="3"/> 월 
+                                        <input type="text" id="birthday3" title="일" size="3"/> 일   
+                                        <!-- 양력, 음력 채크 -->
+                                        <input type="radio" id="solar_calendar" name="calendar" checked="checked" />
+                                        <label for="solar_calendar">양력</label>
+                              
+                                        <input type="radio" id="solar_calendar" name="calendar" />
+                                        <label for="solar_calendar">음력</label>
+                                    </td>
+                                </tr>
+
+                                 <!-- 이메일 -->
+                                 <tr>
+                                    <th scope="row" >
+                                        <!-- scope 속성 : 열의 제목(col)과 행의 제목(row) 알려줌 -->
+                                        <label for="useEmail1">
+                                            <img src="images/join/email_ok.gif" alt="아메일 아이디 입력">
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="useEmail1" title="이메일 아이디 입력" />
+                                        <!-- @ -> &#64; -->
+                                        &#64;
+                                        <input type="text" id="useEmail1" title="이메일 서비스 회사" />
+                                        <!-- select>option*5 -->
+                              
+                                        <select name="" id="">
+                                            <option value="#">도메인선택</option>
+                                            <option value="#">naver.com</option>
+                                            <option value="#">daum.net</option>
+                                            <option value="#">gmail.com</option>
+                                          
+                                        </select>
+                              
+                              
+                                        <p class="info">
+                                            <em>보유하신 이메일</em>을 입력해주세요 <br />
+                                            본인 인증 및 개인정보 확인을 위해 
+                                            <span>정확한 이메일 주소</span>를 입력해주시기 바랍니다.
+                                        </p>
+                              
+                              
+                                    </td>
+                                </tr>
+                               
+                        <!-- 수신 여부 -->
+                                 <tr>
+                                    <th scope="row" >
+                                        <!-- scope 속성 : 열의 제목(col)과 행의 제목(row) 알려줌 -->                                       
+                                            <img src="images/join/email.gif" alt="이메일 수신여부/필수">                                       
+                                    </th>
+                                    <td>
+                                        <!-- 모두수신 -->
+                                        <p><input type="radio" name="recive" id="agreement" checked="checked" />
+                                            <label for="agreement"> 모두수신 (할인.쿠폰/신상품/쇼핑몰소식 등) </label>
+                                        </p>
+                                        <!-- 수신거부 -->
+                                        <p><input type="radio" name="recive" id="receive" />
+                                            <label for="receive"> 수신거부 </label>
+                                        </p>
+
+                                    </td>
+                                </tr> 
+                                 <!-- 휴대폰 -->
+                                 <tr>
+                                    <th scope="row" >
+                                        <!-- scope 속성 : 열의 제목(col)과 행의 제목(row) 알려줌 -->                                     
+                                            <img src="images/join/phone.gif" alt="휴대전화번호/필수">                                       
+                                    </th>
+                           
+                           
+                           
+                                    <td class="mobile">
+                                       <select title="통신사 입력">
+                                           <option value="#">SKT</option>
+                                           <option value="#">KT</option>
+                                           <option value="#">LGT</option>
+                                       </select>
+                                       <!-- select>option*6 -->
+                                       <select title="앞 번호 입력">
+                                           <option value="#">010</option>
+                                           <option value="#">011</option>
+                                           <option value="#">016</option>
+                                           <option value="#">017</option>
+                                           <option value="#">018</option>
+                                           <option value="#">019</option>
+                                       </select> 
+                                         -
+                                         <input type="text"  size="8" maxlength="4">
+                                        
+                                        -
+                                        <input type="text"size="8" maxlength="4">
+                                        
+                                    </td>
+                                </tr>
+                                 <!-- sms 문자 수신 여부 -->
+                                 <tr>
+                                    <th scope="row" >
+                                        <!-- scope 속성 : 열의 제목(col)과 행의 제목(row) 알려줌 -->                                       
+                                            <img src="images/join/sms.gif" alt="sms 수신여부/필수">                                       
+                                    </th>
+                                    <td>
+                                        <p><input type="checkbox" name="receive" id="all_agree" checked="checked">
+                                            <label for="all_agree">모두수신</label>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>     
+
+
+               
+                    <!-- p.btn>a>input -->
+                    <p class="btn">
+                        <a href="#">
+                            <input type="image" src="images/join/btn_cancel.gif" alt="취소" /></a>
+                            <input type="image" src="images/join/btn_ok.gif" alt="확인" /></a>
+                    </p>
+
+                </div> 
+           
+        </section>
+
+        <footer>
+
+            <!-- .blogo+copyright+.sns -->
+            <div class="blogo">
+                <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <div class="copyright"><p>
+                꽃양귀비 홈페이지 제작자 : 김영완<br />
+                Copyright &copy; 2021 <a href="mailto:dkdldksdl@naver.com">김영완</a>.
+                All Rights Reserved.</div>
+            <div class="sns">
+                <!-- ul>li>a>img -->
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="images/face.png" alt="페이스북"></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="images/youtube.png" alt="유튜브"></a></li>
+                    <li><a href="https://twitter.com/"><img src="images/twi.png" alt="트위터"></a></li>
+                    <li><a href="https://band.us/"><img src="images/band.png" alt="밴드"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="images/insta.png" alt="인스타그램"></a></li>
+                </ul>
+            </div>
+
+            <p>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
